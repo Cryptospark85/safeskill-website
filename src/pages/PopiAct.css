@@ -1,0 +1,100 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    background-color: #1c1c1c;
+  }
+  
+  #popiContainer {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 20px;
+    background-color: #1c1c1c;
+  }
+  
+  .popi-content {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #ffffff;
+    text-align: left;
+  }
+  
+  .popi-title {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ff0000;
+  }
+  
+  .popi-section {
+    margin-bottom: 30px;
+  }
+  
+  .popi-section h2 {
+    font-size: 24px;
+    color: #ff5722;
+    margin-bottom: 10px;
+  }
+  
+  .popi-section p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .popi-section ul {
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .popi-section ul li {
+    margin-bottom: 8px;
+    color: #ffffff;
+  }
+  
+  .popi-section ul li:before {
+    content: "• ";
+    color: #ff5722;
+  }
+  
+  /* Background Animation */
+  .starsec,
+  .starthird,
+  .starfourth,
+  .starfifth {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    animation: animStar 150s linear infinite;
+  }
+  
+  .starsec {
+    box-shadow: 571px 173px #ff0000, 1732px 143px #ff5722, 1745px 454px #ff9800;
+  }
+  
+  .starthird {
+    box-shadow: 600px 500px #ff5722, 1793px 1123px #ff9800;
+  }
+  
+  .starfourth {
+    box-shadow: 350px 630px #ffeb3b, 350px 800px #ff5722;
+  }
+  
+  .starfifth {
+    box-shadow: 168px 1410px #ff0000, 1777px 782px #ff9800;
+  }
+  
+  @keyframes animStar {
+    0% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(-2000px);
+    }
+  }
+  

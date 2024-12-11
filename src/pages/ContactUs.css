@@ -1,0 +1,147 @@
+/* General Styling for Contact Us page */
+
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    background-color: #1c1c1c;
+}
+
+#mainContainer {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-color: #1c1c1c;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(47, 47, 51, 0.9);
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.contact-title {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    color: #ffffff;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.8);
+}
+
+/* Error styles */
+.error-label {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.error-input {
+    border: 2px solid #ff0000;
+    background-color: #ffcccc;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    background-color: #1c1c1c;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.submit-button:hover {
+    background-color: #FF0000;
+}
+
+.success-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+  }
+  
+
+/* Background Animation */
+.starsec,
+.starthird,
+.starfourth,
+.starfifth {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    animation: animStar 150s linear infinite;
+}
+
+.starsec {
+    box-shadow: 571px 173px #ff4500, 1732px 143px #ff6347, 1745px 454px #ff4500;
+}
+
+.starthird {
+    box-shadow: 600px 500px #ff4500, 1793px 1123px #ff8c00;
+}
+
+.starfourth {
+    box-shadow: 350px 630px #ffd700, 350px 800px #ff4500;
+}
+
+.starfifth {
+    box-shadow: 168px 1410px #ffa500, 1777px 782px #ff6347;
+}
+
+@keyframes animStar {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-2000px);
+    }
+}

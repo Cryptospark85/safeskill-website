@@ -1,0 +1,84 @@
+.footer-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 200px;
+    background-color: #1c1c1c;
+  }
+  
+  .starsec,
+  .starthird,
+  .starfourth,
+  .starfifth {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    animation: animStar 5s linear infinite;
+  }
+  
+  .starsec {
+    box-shadow: 
+        571px 173px #ff0000, 
+        1732px 143px #ff5722, 
+        1745px 454px #ff9800, 
+        234px 784px #ff0000, 
+        400px 200px #ffeb3b, 
+        620px 1230px #ff5722, 
+        1330px 760px #ff9800, 
+        1850px 420px #ff0000, 
+        890px 360px #ff5722, 
+        1120px 890px #ff9800;
+}
+
+.starthird {
+    box-shadow: 
+        600px 500px #ff5722, 
+        1793px 1123px #ff9800, 
+        1200px 200px #ff0000, 
+        340px 890px #ff5722, 
+        890px 630px #ffeb3b, 
+        1900px 900px #ff9800, 
+        1280px 400px #ff5722, 
+        750px 1100px #ff0000, 
+        1020px 550px #ff9800, 
+        460px 300px #ffeb3b;
+}
+
+.starfourth {
+    box-shadow: 
+        350px 630px #ffeb3b, 
+        350px 800px #ff5722, 
+        120px 400px #ff9800, 
+        1700px 560px #ff0000, 
+        780px 200px #ff5722, 
+        1430px 910px #ffeb3b, 
+        890px 330px #ff9800, 
+        1180px 450px #ff5722, 
+        920px 670px #ff0000, 
+        300px 800px #ff9800;
+}
+
+.starfifth {
+    box-shadow: 
+        168px 1410px #ff0000, 
+        1777px 782px #ff9800, 
+        1300px 300px #ff5722, 
+        400px 500px #ffeb3b, 
+        1250px 800px #ff9800, 
+        600px 1000px #ff0000, 
+        900px 450px #ff5722, 
+        1500px 600px #ff9800, 
+        180px 750px #ffeb3b, 
+        1000px 200px #ff5722;
+}
+
+  @keyframes animStar {
+    0% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(-2000px);
+    }
+  }
+  

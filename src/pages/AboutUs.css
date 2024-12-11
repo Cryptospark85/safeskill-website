@@ -1,0 +1,151 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    background-color: #1c1c1c;
+}
+
+#aboutContainer {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 20px;
+    background-color: #1c1c1c;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #ffffff;
+    text-align: center;
+}
+
+.about-title {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #ff0000;
+}
+
+.about-description {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.highlight {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+/* Counter Section */
+.counters {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.counter {
+    text-align: center;
+    background: rgba(47, 47, 51, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.counter:hover {
+    box-shadow: 0 0 20px 5px rgba(255, 69, 0, 0.8), 0 0 15px 5px rgba(255, 165, 0, 0.8), 0 0 10px 2px rgba(255, 235, 59, 0.8);
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.counter h2 {
+    font-size: 32px;
+    margin: 0;
+    color: #ff9800;
+}
+
+.counter p {
+    font-size: 16px;
+    margin: 5px 0 0;
+    color: #ffffff;
+}
+
+/* FAQ Section */
+.faq-title {
+    font-size: 28px;
+    color: #ff0000;
+    margin-bottom: 20px;
+}
+
+.faq {
+    text-align: left;
+}
+
+.faq-item {
+    background: rgba(47, 47, 51, 0.9);
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.faq-item h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #fff;
+}
+
+.faq-item p {
+    margin: 10px 0 0;
+    color: #ffffff;
+    display: none;
+}
+
+.faq-item.open p {
+    display: block;
+}
+
+.faq-item:hover {
+    background: #ff0000;
+}
+
+/* Background Animation */
+.starsec,
+.starthird,
+.starfourth,
+.starfifth {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    animation: animStar 150s linear infinite;
+}
+
+.starsec {
+    box-shadow: 571px 173px #ff0000, 1732px 143px #ff5722, 1745px 454px #ff9800;
+}
+
+.starthird {
+    box-shadow: 600px 500px #ff5722, 1793px 1123px #ff9800;
+}
+
+.starfourth {
+    box-shadow: 350px 630px #ffeb3b, 350px 800px #ff5722;
+}
+
+.starfifth {
+    box-shadow: 168px 1410px #ff0000, 1777px 782px #ff9800;
+}
+
+@keyframes animStar {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-2000px);
+    }
+}
